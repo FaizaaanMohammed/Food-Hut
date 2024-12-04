@@ -58,7 +58,7 @@ export default function Navbar(props) {
       sx={{
         display: "flex",
         backgroundColor: "transparent",
-        position: "absolute",
+        position: "fixed",
         top: "0",
         left: "0",
         height: "auto",

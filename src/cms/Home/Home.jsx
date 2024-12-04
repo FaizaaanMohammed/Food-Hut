@@ -15,7 +15,12 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import SearchIcon from "@mui/icons-material/Search";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import herosecimage from "../../Assets/Images/Bannersecgirl.png";
-
+import fireimage from '../../Assets/Images/fire.png'
+import spinachImage from '../../Assets/Images/spinach.png'
+import food1 from '../../Assets/Images/food1.png'
+import food2 from '../../Assets/Images/food2.png'
+import food3 from '../../Assets/Images/food3.png'
+import food4 from '../../Assets/Images/food4.png'
 const Home = () => {
   return (
     <>
@@ -176,7 +181,8 @@ const Home = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  padding: "70px 0px",
+                  padding: {md:"110px 0px 0px 0px",sm:"120px 0px 60px 0px",xs:"70px 0px 70px 0px"},
+                  position:"relative"
                 }}
               >
                 <Box className={Hero.leftside}>
@@ -191,6 +197,23 @@ const Home = () => {
                     className={Hero.bannergirlimage}
                   />
                 </Box>
+                {/* fire image */}
+                <Box className={Hero.fireImage}>
+                  <img src={fireimage} alt="" />
+                </Box>
+                {/* end fire image */}
+                <Box className={Hero.spinachImage}>
+                  <img src={spinachImage} alt="" />
+                </Box>
+                {/* end spinach image */}
+                <Box className={Hero.Food1Image}>
+                  <img src={food1} alt="" />
+                </Box>
+                {/* end food1 image */}
+                <Box className={Hero.Food2Image}>
+                  <img src={food2} alt="" />
+                </Box>
+
               </Box>
             </Grid>
           </Grid>
