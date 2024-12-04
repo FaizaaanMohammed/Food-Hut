@@ -72,12 +72,36 @@
             z-index: 9999;
           }
           .Food1Image img{
-            position: absolute;
-            top: -160px;
-            right: -68px;
-            z-index: 888;
+            position: absolute!important;
+            top: -149px!important;
+            left: -37px!important;
+            z-index: 888!important;
             width: 110px;
             height: 110px;
+          }
+          .Food2Image img{
+            position: absolute!important;
+            top: -207px!important;
+            left: -37px!important;
+            z-index: 888!important;
+            width: 100px;
+            height: 100px;
+          }
+          .Food3Image img{
+            position: absolute!important;
+            top: -186px!important;
+            left: -6px!important;
+            z-index: 888!important;
+            width: 106px;
+            height: 97px;
+          }
+          .Food4Image img{
+            position: absolute!important;
+            top: -146px!important;
+            left: 18px!important;
+            z-index: 888!important;
+            width: 82px;
+            height: 82px;
           }
          
       }
@@ -98,6 +122,27 @@
             position: absolute;
             top: 0px;
             left: -88px;
+            z-index: 888;
+           
+          }
+          .Food2Image img{
+            position: absolute;
+            top: 0px;
+            left: -88px;
+            z-index: 888;
+           
+          }
+          .Food3Image img{
+            position: absolute;
+            top: 15px;
+            left: 0px;
+            z-index: 888;
+           
+          }
+          .Food4Image img{
+            position: absolute;
+            top: 10px;
+            left: 40px;
             z-index: 888;
            
           }
@@ -136,11 +181,27 @@
           }
           .Food2Image img{
             position: absolute;
-            bottom: 127px;
+            bottom: 135px;
             right: -62px;
             z-index: 888;
             width: 95px;
             height: 95px;
+          }
+          .Food3Image img{
+            position: absolute;
+            bottom: 122px;
+            right: -107px;
+            z-index: 888;
+            width: 106px;
+            height: 97px;
+          }
+          .Food4Image img{
+            position: absolute;
+            bottom: 90px;
+            right: -95px;
+            z-index: 888;
+            width: 79px;
+            height: 79px;
           }
       }
 
@@ -184,5 +245,17 @@
   position: absolute;
   top: 550px;
   left: 25.7%;
+  z-index: 888;
+}
+.Food3Image{
+  position: absolute;
+  top: 526px;
+  left: 55.7%;
+  z-index: 888;
+}
+.Food4Image{
+  position: absolute;
+  top: 400px;
+  left: 74.7%;
   z-index: 888;
 }

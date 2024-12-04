@@ -213,7 +213,14 @@ const Home = () => {
                 <Box className={Hero.Food2Image}>
                   <img src={food2} alt="" />
                 </Box>
-
+                {/* end food2 image */}
+                <Box className={Hero.Food3Image}>
+                  <img src={food3} alt="" />
+                </Box>
+                {/* end food3 image */}
+                <Box className={Hero.Food4Image}>
+                  <img src={food4} alt="" />
+                </Box>
               </Box>
             </Grid>
           </Grid>
