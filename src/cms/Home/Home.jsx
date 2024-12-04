@@ -88,7 +88,7 @@ const Home = () => {
                 }}
               >
                 We're <span style={{ color: "#F54748" }}> Serious </span>{" "}
-                <br className={Hero.break} /> For{" "}
+                <br className={Hero.breakk} /> For{" "}
                 <span style={{ color: "#F54748" }}>Food</span> &{" "}
                 <span style={{ color: "#FDC55E" }}>Delivery.</span>
               </Typography>
