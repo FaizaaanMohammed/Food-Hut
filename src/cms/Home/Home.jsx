@@ -125,7 +125,7 @@ const Home = () => {
                     fontFamily: "Poppins",
                     textTransform: "capitalize",
                     color: "#000",
-                    fontSize: { md: "16px", sm: "14px", md: "14px" },
+                    fontSize: {  sm: "14px", md: "14px" },
                     fontWeight: "Regular",
                     boxShadow: "none",
                     padding: {
@@ -143,7 +143,7 @@ const Home = () => {
                     fontFamily: "Poppins",
                     textTransform: "capitalize",
                     color: "#fff",
-                    fontSize: { md: "16px", sm: "14px", md: "14px" },
+                    fontSize: { sm: "14px", md: "14px" },
                     fontWeight: "Regular",
                     boxShadow: "none",
                     padding: {
