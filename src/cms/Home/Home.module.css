@@ -173,31 +173,31 @@
           }
           .Food1Image img{
             position: absolute;
-            top: -169px;
+            top: -167px!important;
             left: -42px;
             z-index: 888;
             width: 100px;
             height: 100px;
           }
           .Food2Image img{
-            position: absolute;
-            bottom: 135px;
+            position: absolute!important;
+            top: -225px!important;
             right: -62px;
             z-index: 888;
             width: 95px;
             height: 95px;
           }
           .Food3Image img{
-            position: absolute;
-            bottom: 122px;
+            position: absolute!important;
+            top: -215px!important;
             right: -107px;
             z-index: 888;
             width: 106px;
             height: 97px;
           }
           .Food4Image img{
-            position: absolute;
-            bottom: 90px;
+            position: absolute!important;
+            top: -160px!important;
             right: -95px;
             z-index: 888;
             width: 79px;
