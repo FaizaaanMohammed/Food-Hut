@@ -55,7 +55,11 @@
                       width: 280px;
                       height:340px;
           }
-          .direction{
+         
+      }
+
+      @media (max-width: 769px){
+        .direction{
             display: flex!important;
             flex-direction: column-reverse!important;
           }
