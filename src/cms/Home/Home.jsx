@@ -24,6 +24,8 @@ import food3 from "../../Assets/Images/food3.png";
 import food4 from "../../Assets/Images/food4.png";
 import pizzaImage from "../../Assets/Images/banner pizza.png";
 import StarIcon from "@mui/icons-material/Star";
+import vector3 from '../../Assets/Images/Vector 3.png'
+import polygon from '../../Assets/Images/Polygon 1.png'
 const Home = () => {
   return (
     <>
@@ -78,7 +80,7 @@ const Home = () => {
                 className={Hero.heroSecHeading}
                 sx={{
                   fontSize: {
-                    xs: "48px!important",
+                    xs: "40px!important", sm:"48px!important",
                     lineHeight: "135%",
                     fontWeight: "600!important",
                     letterSpacing: "0%",
@@ -92,7 +94,7 @@ const Home = () => {
               </Typography>
               <Typography
                 className={Hero.bannerSecPara}
-                sx={{ xs: { fontSize: "20px!important" } }}
+                sx={{ fontSize: { xs: "22px!important" } }}
               >
                 Best cooks and best delivery guys all at your{" "}
                 <br className={Hero.breakk} /> service. Hot tasty food will
@@ -280,6 +282,14 @@ const Home = () => {
                     </Typography>
                   </Box>
                 </Card>
+                {/* end pizza card */}
+                <Box sx={{position:"absolute",zIndex:"76575",top:"7%",left:"80%",display:{xs:"none",sm:"block"}}}>
+                  <img src={vector3} alt="vector3" />
+                </Box>
+                {/* end vector part */}
+                <Box sx={{position:"absolute",top:"5%",left:"86.5%",display:{xs:"none",sm:"block"}}}>
+                  <img src={polygon} alt="polygon" />
+                </Box>
               </Box>
             </Grid>
           </Grid>

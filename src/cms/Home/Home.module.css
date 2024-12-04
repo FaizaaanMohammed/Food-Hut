@@ -240,6 +240,15 @@
             background-size:cover;
             
           }
+          .Background{
+            background: linear-gradient(to top,  #000000 10%, rgba(59,44,31,1) 205%);
+          }
+          .linearStyle{
+            position: absolute!important;
+            top: 0%!important;
+            right: 0%!important;
+            height: 700px!important;
+        }
       }
 
       /* Media query */
