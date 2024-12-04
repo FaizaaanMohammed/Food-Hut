@@ -3,6 +3,7 @@ import Hero from "../Home/Home.module.css";
 import {
   Box,
   Button,
+  Card,
   Container,
   Grid,
   InputAdornment,
@@ -15,12 +16,14 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import SearchIcon from "@mui/icons-material/Search";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import herosecimage from "../../Assets/Images/Bannersecgirl.png";
-import fireimage from '../../Assets/Images/fire.png'
-import spinachImage from '../../Assets/Images/spinach.png'
-import food1 from '../../Assets/Images/food1.png'
-import food2 from '../../Assets/Images/food2.png'
-import food3 from '../../Assets/Images/food3.png'
-import food4 from '../../Assets/Images/food4.png'
+import fireimage from "../../Assets/Images/fire.png";
+import spinachImage from "../../Assets/Images/spinach.png";
+import food1 from "../../Assets/Images/food1.png";
+import food2 from "../../Assets/Images/food2.png";
+import food3 from "../../Assets/Images/food3.png";
+import food4 from "../../Assets/Images/food4.png";
+import pizzaImage from "../../Assets/Images/banner pizza.png";
+import StarIcon from "@mui/icons-material/Star";
 const Home = () => {
   return (
     <>
@@ -33,10 +36,7 @@ const Home = () => {
         {/* end of linear pattern box */}
         {/* start banner section */}
         <Container maxWidth="xl">
-          <Grid
-            container
-            className={Hero.direction}
-          >
+          <Grid container className={Hero.direction}>
             <Grid
               sm={12}
               md={6}
@@ -181,8 +181,12 @@ const Home = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  padding: {md:"110px 0px 0px 0px",sm:"120px 0px 60px 0px",xs:"70px 0px 70px 0px"},
-                  position:"relative"
+                  padding: {
+                    md: "110px 0px 0px 0px",
+                    sm: "120px 0px 60px 0px",
+                    xs: "70px 0px 70px 0px",
+                  },
+                  position: "relative",
                 }}
               >
                 <Box className={Hero.leftside}>
@@ -221,6 +225,61 @@ const Home = () => {
                 <Box className={Hero.Food4Image}>
                   <img src={food4} alt="" />
                 </Box>
+                {/* end food4 image */}
+                <Card
+                  sx={{
+                    width: "190px",
+                    height: "81px",
+                    position: "absolute",
+                    zIndex: "99999",
+                    top: "30%",
+                    left: "7%",
+                    display: "flex",
+                    justifyContent: "space-around",
+                    alignItems: "center",
+                    backgroundColor: "#0D0D0D",
+                    color: "#fff",
+                    borderRadius: "15px",
+                    padding: {sm:"10px 5px",xs:"5px 5px"},
+                    fontFamily: "Poppins",
+                  }}
+                  className={Hero.ratingCard}
+                >
+                  <img src={pizzaImage} alt="" />
+                  <Box>
+                    <Typography sx={{ fontFamily: "Poppins",fontSize:{xs:"10px",sm:"16px"},padding:"0px" }}>
+                      Italian Pizza
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        color: "#FDCE77",
+                        fontSize: "6px",
+                        padding: "0px",
+                        margin: "0px",
+                        display:{xs:"none",sm:"block"}
+                        
+                        
+                      }}
+
+                    >
+                      <StarIcon sx={{width:{xs:"15px"}}} />
+                      <StarIcon sx={{width:{xs:"15px"}}}/>
+                      <StarIcon sx={{width:{xs:"15px"}}}/>
+                      <StarIcon sx={{width:{xs:"15px"}}} />
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        color: "#fff",
+                        fontSize: {xs:"10px",sm:"12px"},
+                        padding:"0px"
+                      }}
+                    >
+                      $9.50
+                    </Typography>
+                  </Box>
+                </Card>
               </Box>
             </Grid>
           </Grid>

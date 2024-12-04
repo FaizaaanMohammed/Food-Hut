@@ -103,6 +103,21 @@
             width: 82px;
             height: 82px;
           }
+          .ratingCard {
+            position: absolute!important;
+            top: 27%!important;
+            left: -3%!important;
+            width: 120px!important;
+            height: 48px!important;
+            background-size:cover;
+            
+          }
+          .ratingCard img{
+            width: 25px!important;
+            height: 25px!important;
+            background-size:cover;
+            
+          }
          
       }
 
@@ -145,6 +160,13 @@
             left: 40px;
             z-index: 888;
            
+          }
+          .ratingCard {
+            position: absolute!important;
+            top: 27%!important;
+            left: -7%!important;
+            background-size:cover;
+            
           }
       }
       @media (max-width:361px){
@@ -202,6 +224,21 @@
             z-index: 888;
             width: 79px;
             height: 79px;
+          }
+          .ratingCard {
+            position: absolute!important;
+            top: 27%!important;
+            left: -7%!important;
+            width: 120px!important;
+            height: 48px!important;
+            background-size:cover;
+            
+          }
+          .ratingCard img{
+            width: 25px!important;
+            height: 25px!important;
+            background-size:cover;
+            
           }
       }
 
