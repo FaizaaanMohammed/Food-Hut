@@ -67,11 +67,17 @@
       }
       @media (max-width:361px){
         .leftside{
-            width: 340px!important;
-            height: 340px!important;
+            width: 320px!important;
+            height: 320px!important;
             background-size: cover;
             background-position: center;
           }
+          .bannergirlimage{
+                     width: 260px;
+                      height:320px;
+                      bottom: 13px!important;
+          }
+          
       }
 
 .input{
