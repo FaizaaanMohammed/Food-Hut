@@ -28,7 +28,10 @@ const Home = () => {
         {/* end of linear pattern box */}
         {/* start banner section */}
         <Container maxWidth="xl">
-          <Grid container>
+          <Grid
+            container
+            className={Hero.direction}
+          >
             <Grid
               sm={12}
               md={6}
@@ -125,7 +128,7 @@ const Home = () => {
                     fontFamily: "Poppins",
                     textTransform: "capitalize",
                     color: "#000",
-                    fontSize: {  sm: "14px", md: "14px" },
+                    fontSize: { sm: "14px", md: "14px" },
                     fontWeight: "Regular",
                     boxShadow: "none",
                     padding: {
@@ -184,7 +187,6 @@ const Home = () => {
                       position: "absolute",
                       bottom: "15px",
                       zIndex: "99",
-                      
                     }}
                     className={Hero.bannergirlimage}
                   />

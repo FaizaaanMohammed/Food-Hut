@@ -55,6 +55,10 @@
                       width: 280px;
                       height:340px;
           }
+          .direction{
+            display: flex!important;
+            flex-direction: column-reverse!important;
+          }
       }
 
 .input{
