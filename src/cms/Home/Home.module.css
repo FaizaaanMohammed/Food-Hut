@@ -45,7 +45,6 @@
           .leftside{
             width: 350px!important;
             height: 351px!important;
-            overflow: hidden;
             background-size: cover;
             background-position: center;
           }
@@ -62,6 +61,16 @@
         .direction{
             display: flex!important;
             flex-direction: column-reverse!important;
+            justify-content: center;
+            align-items: center;
+          }
+      }
+      @media (max-width:361px){
+        .leftside{
+            width: 340px!important;
+            height: 340px!important;
+            background-size: cover;
+            background-position: center;
           }
       }
 
