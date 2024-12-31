@@ -3,6 +3,7 @@
     stroke: #000;
     padding: 100px 0px;
     position: relative;
+    box-shadow: 0px 4px 4px #000000;
 }
 .linearStyle{
     position: absolute;
@@ -32,6 +33,7 @@
         .break {
           display: inline;
         }
+        
         
       }
 
@@ -121,6 +123,16 @@
           .breakk{
             display: none;
           }
+          .offercardImgBox {
+            background: linear-gradient(#151515,#151515)padding-box,
+            linear-gradient(90deg ,#F54748,#FDC55E)border-box;
+            top: 45px!important;
+            left: 50%!important;
+          }
+          .offercardButton{
+            bottom: 84px!important;
+          }
+          
          
       }
 
@@ -170,6 +182,9 @@
             left: -7%!important;
             background-size:cover;
             
+          }
+          .offercardButton{
+            bottom: 125px!important;
           }
       }
       @media (max-width:361px){
@@ -245,12 +260,38 @@
           }
           .Background{
             background: linear-gradient(to top,  #000000 10%, rgba(59,44,31,1) 205%);
+            padding-bottom: 30px;
           }
           .linearStyle{
             position: absolute!important;
             top: 0%!important;
             right: 0%!important;
             height: 700px!important;
+        }
+        .offersBackground{
+          background-color: #000000;
+          padding: 0px 0px;
+        }
+        .offercardImgBox {
+          background: linear-gradient(#151515,#151515)padding-box,
+          linear-gradient(90deg ,#F54748,#FDC55E)border-box;
+          top: 45px!important;
+          left: 50%!important;
+        }
+        .offercardButton{
+          bottom: 82px!important;
+        }
+      }
+      @media  (max-width: 426px){
+        .offercardButton{
+          bottom: 82px!important;
+        }
+       
+      }
+      @media (min-width: 376px) and (max-width: 426px){
+        .offercardRate{
+          right: 103px!important;
+          top: 82px !important;;
         }
       }
 
@@ -307,4 +348,21 @@
   top: 400px;
   left: 74.7%;
   z-index: 888;
+}
+.offersBackground{
+  background-color: #000000;
+  padding: 80px 0px;
+}
+.offercard{
+ border-radius: 20px!important;
+}
+
+
+.offercardImgBox {
+  background: linear-gradient(#151515,#151515)padding-box,
+  linear-gradient(90deg ,#F54748,#FDC55E)border-box;
+}
+.offercardImg{
+  width: 155px;
+  height: 155px;
 }

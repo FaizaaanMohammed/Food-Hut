@@ -24,9 +24,58 @@ import food3 from "../../Assets/Images/food3.png";
 import food4 from "../../Assets/Images/food4.png";
 import pizzaImage from "../../Assets/Images/banner pizza.png";
 import StarIcon from "@mui/icons-material/Star";
-import vector3 from '../../Assets/Images/Vector 3.png'
-import polygon from '../../Assets/Images/Polygon 1.png'
+import vector3 from "../../Assets/Images/Vector 3.png";
+import polygon from "../../Assets/Images/Polygon 1.png";
+import orange from "../../Assets/Images/Orange.png";
+import cardfood1 from "../../Assets/Images/cardfood1.png";
+import cardfood2 from "../../Assets/Images/cardfood2.png";
+import cardfood3 from "../../Assets/Images/cardfood3.png";
+import cardfood4 from "../../Assets/Images/cardfood4.png";
+import iconnImg from "../../Assets/Images/Group 8442.png";
 const Home = () => {
+  const OffersCard = [
+    {
+      title: "Kebab",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      rate: "10$",
+      img: cardfood1,
+      icon: StarIcon,
+      rating: "4.5",
+      IconImg: iconnImg,
+    },
+    {
+      title: "Chicken Tikka",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      rate: "15$",
+      img: cardfood2,
+      icon: StarIcon,
+      rating: "4.8",
+      IconImg: iconnImg,
+    },
+    {
+      title: "Desi Chowmein",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      rate: "8$",
+      img: cardfood3,
+      icon: StarIcon,
+      rating: "4.2",
+      IconImg: iconnImg,
+    },
+    {
+      title: "Chicken Chargha",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      rate: "28$",
+      img: cardfood4,
+      icon: StarIcon,
+      rating: "5",
+      IconImg: iconnImg,
+    },
+  ];
+
   return (
     <>
       <Box className={Hero.Background}>
@@ -42,8 +91,21 @@ const Home = () => {
             <Grid
               sm={12}
               md={6}
-              sx={{ paddingLeft: { md: "20px", xs: "10px" } }}
+              sx={{
+                paddingLeft: { md: "20px", xs: "10px" },
+                position: "relative",
+              }}
             >
+              <Box
+                sx={{
+                  position: "absolute",
+                  zIndex: "98765",
+                  top: "20%",
+                  left: "55%",
+                }}
+              >
+                <img src={orange} alt="" />
+              </Box>
               <Box
                 sx={{
                   paddingTop: { sm: "70px", xs: "30px" },
@@ -80,7 +142,8 @@ const Home = () => {
                 className={Hero.heroSecHeading}
                 sx={{
                   fontSize: {
-                    xs: "40px!important", sm:"48px!important",
+                    xs: "40px!important",
+                    sm: "48px!important",
                     lineHeight: "135%",
                     fontWeight: "600!important",
                     letterSpacing: "0%",
@@ -242,14 +305,20 @@ const Home = () => {
                     backgroundColor: "#0D0D0D",
                     color: "#fff",
                     borderRadius: "15px",
-                    padding: {sm:"10px 5px",xs:"5px 5px"},
+                    padding: { sm: "10px 5px", xs: "5px 5px" },
                     fontFamily: "Poppins",
                   }}
                   className={Hero.ratingCard}
                 >
                   <img src={pizzaImage} alt="" />
                   <Box>
-                    <Typography sx={{ fontFamily: "Poppins",fontSize:{xs:"10px",sm:"16px"},padding:"0px" }}>
+                    <Typography
+                      sx={{
+                        fontFamily: "Poppins",
+                        fontSize: { xs: "10px", sm: "16px" },
+                        padding: "0px",
+                      }}
+                    >
                       Italian Pizza
                     </Typography>
                     <Typography
@@ -259,23 +328,20 @@ const Home = () => {
                         fontSize: "6px",
                         padding: "0px",
                         margin: "0px",
-                        display:{xs:"none",sm:"block"}
-                        
-                        
+                        display: { xs: "none", sm: "block" },
                       }}
-
                     >
-                      <StarIcon sx={{width:{xs:"15px"}}} />
-                      <StarIcon sx={{width:{xs:"15px"}}}/>
-                      <StarIcon sx={{width:{xs:"15px"}}}/>
-                      <StarIcon sx={{width:{xs:"15px"}}} />
+                      <StarIcon sx={{ width: { xs: "15px" } }} />
+                      <StarIcon sx={{ width: { xs: "15px" } }} />
+                      <StarIcon sx={{ width: { xs: "15px" } }} />
+                      <StarIcon sx={{ width: { xs: "15px" } }} />
                     </Typography>
                     <Typography
                       sx={{
                         fontFamily: "Poppins",
                         color: "#fff",
-                        fontSize: {xs:"10px",sm:"12px"},
-                        padding:"0px"
+                        fontSize: { xs: "10px", sm: "12px" },
+                        padding: "0px",
                       }}
                     >
                       $9.50
@@ -283,16 +349,252 @@ const Home = () => {
                   </Box>
                 </Card>
                 {/* end pizza card */}
-                <Box sx={{position:"absolute",zIndex:"76575",top:"7%",left:"80%",display:{xs:"none",sm:"block"}}}>
+                <Box
+                  sx={{
+                    position: "absolute",
+                    zIndex: "76575",
+                    top: "7%",
+                    left: "80%",
+                    display: { xs: "none", sm: "block" },
+                  }}
+                >
                   <img src={vector3} alt="vector3" />
                 </Box>
                 {/* end vector part */}
-                <Box sx={{position:"absolute",top:"5%",left:"86.5%",display:{xs:"none",sm:"block"}}}>
+                <Box
+                  sx={{
+                    position: "absolute",
+                    top: "5%",
+                    left: "86.5%",
+                    display: { xs: "none", sm: "block" },
+                  }}
+                >
                   <img src={polygon} alt="polygon" />
                 </Box>
               </Box>
             </Grid>
           </Grid>
+        </Container>
+      </Box>
+      {/* end hero section */}
+      <Box
+        className={Hero.offersBackground}
+        sx={{ padding: { xs: "40px 0px!important", sm: "50px 0px!important" } }}
+      >
+        <Container maxWidth="xl">
+          <Box>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Poppins",
+                fontSize: { sm: "48px", xs: "40px" },
+                textAlign: "center",
+                textTransform: "capitalize",
+                fontWeight: "Bold",
+                paddingBottom: "20px",
+              }}
+            >
+              Today <span style={{ color: "#F54748" }}>special</span> offers
+            </Typography>
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Poppins",
+                fontSize: { xs: "15px", sm: "18px" },
+                textAlign: "center",
+                textTransform: "capitalize",
+                fontWeight: "Regular",
+                maxWidth: "856px",
+                margin: "auto",
+                paddingBottom: { xs: "60px", md: "20px",sm:"100px" },
+              }}
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </Typography>
+            {/* end paragraph and heading part */}
+            <Grid
+              container
+              sx={{
+                paddingTop: { xs: "30px", md: "180px" },
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {OffersCard.map((item) => {
+                return (
+                  <>
+                    <Grid
+                      xs={12}
+                      sm={6}
+                      md={3}
+                      sx={{ position: "relative", display: "flex",justifyContent:"center" }}
+                    >
+                      <Card
+                        sx={{
+                          height: "368px",
+                          width: "310px",
+                          background:
+                            "linear-gradient(to bottom, #352f2f 0%, #674e4e 100%)!important",
+                          opacity: "100%",
+                          margin: {
+                            xs: "45px 20px 105px",
+                            md: "0px 25px",
+                            sm: "15px 20px 145px",
+                          },
+                          backgroundColor: "#000!important",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          flexDirection: "column",
+                          padding: "0px 30px",
+                        }}
+                        className={Hero.offercard}
+                      >
+                        <Box
+                          sx={{
+                            position: "absolute",
+                            top: "0%",
+                            left: "50%",
+                            zIndex: "87654456",
+                            border: "9px solid transparent",
+                            borderRadius: "50%",
+                            transform: " translate(-50%, -50%)",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            height: "190px",
+                            width: "190px",
+                            overflow: "hidden",
+                            padding: "0px",
+                          }}
+                          className={Hero.offercardImgBox}
+                        >
+                          <img
+                            src={item.img}
+                            alt=""
+                            style={{
+                              zIndex: "999999999",
+                              width: "150px!important",
+                              height: "150px!important",
+                            }}
+                            className={Hero.offercardImg}
+                          />
+                        </Box>
+                        <Box
+                          sx={{
+                            width: "60px",
+                            height: "60px",
+                            borderRadius: "50%",
+                            backgroundColor: "#FDCE77",
+                            border: {
+                              sm: "4px solid #000",
+                              xs: "4px solid #fff",
+                            },
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            position: "absolute",
+                            right: { xs: "64px", sm: "95px" },
+                            top: { xs: "82px", sm: "45px" },
+                            zIndex: "9999999999",
+                          }}
+                          className={Hero.offercardRate}
+                        >
+                          <Typography
+                            sx={{
+                              fontSize: { sm: "18px", xs: "16px" },
+                              fontFamily: "Poppins",
+                              color: { xs: "#fff",sm:"#000"},
+                            }}
+                            
+                          >
+                            {item.rate}
+                          </Typography>
+                        </Box>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            paddingTop: "55px",
+                          }}
+                        >
+                          <img src={item.IconImg} alt="" />
+                          <Typography sx={{ marginLeft: "10px" }}>
+                            <StarIcon
+                              sx={{ color: "#FFBE1A", fontSize: "30px" }}
+                            />
+                          </Typography>
+                          <Typography
+                            sx={{
+                              marginLeft: "13px",
+                              fontSize: "20px",
+                              color: "#fff",
+                            }}
+                          >
+                            {`(${item.rating})`}
+                          </Typography>
+                        </Box>
+                        <Box sx={{ paddingTop: "25px" }}>
+                          <Typography
+                            sx={{
+                              color: "#F65F5F",
+                              fontSize: "24px",
+                              fontWeight: "500",
+                              fontFamily: "Poppins",
+                            }}
+                          >
+                            {item.title}
+                          </Typography>
+                        </Box>
+                        <Box sx={{ paddingTop: "12px" }}>
+                          <Typography
+                            sx={{
+                              color: "#fff",
+                              fontSize: "16px",
+                              fontFamily: "Poppins",
+                              textAlign: "center",
+                              lineHeight: "auto",
+                              textTransform: "capitalize",
+                            }}
+                          >
+                            {item.description}
+                          </Typography>
+                        </Box>
+                        <Box
+                          sx={{
+                            position: "absolute",
+                            bottom: "-20px",
+                            color: "#000",
+                            zIndex:"9999999999999999"
+                          }}
+                          className={Hero.offercardButton}
+                        >
+                          <Button
+                            sx={{
+                              color: "#000",
+                              textTransform: "capitalize",
+                              width: "131px",
+                              height: "45px",
+                              backgroundColor: "#F65F5F",
+                              borderRadius: "100px",
+                              fontSize: "17px",
+                              lineHeight: "auto",
+                              fontFamily: "Poppins",
+                            }}
+                          >
+                            Order Now
+                          </Button>
+                        </Box>
+                      </Card>
+                    </Grid>
+                  </>
+                );
+              })}
+            </Grid>
+          </Box>
         </Container>
       </Box>
     </>
