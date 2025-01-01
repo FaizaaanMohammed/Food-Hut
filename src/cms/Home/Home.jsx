@@ -32,6 +32,14 @@ import cardfood2 from "../../Assets/Images/cardfood2.png";
 import cardfood3 from "../../Assets/Images/cardfood3.png";
 import cardfood4 from "../../Assets/Images/cardfood4.png";
 import iconnImg from "../../Assets/Images/Group 8442.png";
+import chef from "../../Assets/Images/chef1.png";
+import pizza from "../../Assets/Images/Group 8434.png";
+import particles from "../../Assets/Images/5a3ac62578a9f8.png";
+import vector9 from "../../Assets/Images/Vector 9.png";
+import order from "../../Assets/Images/image 15.png";
+import twentyfour from "../../Assets/Images/image 17.png";
+import booking from "../../Assets/Images/image 18.png";
+
 const Home = () => {
   const OffersCard = [
     {
@@ -74,6 +82,15 @@ const Home = () => {
       rating: "5",
       IconImg: iconnImg,
     },
+  ];
+
+  const service = [
+    { img: order, desc: "Online Order" },
+    { img: twentyfour, desc: "24/7 Service" },
+    { img: booking, desc: "Pre-Reservation" },
+    { img: booking, desc: "Super Chef" },
+    { img: booking, desc: "Oragonized Foodhut Place" },
+    { img: booking, desc: "Clean Kitchen" },
   ];
 
   return (
@@ -377,6 +394,7 @@ const Home = () => {
         </Container>
       </Box>
       {/* end hero section */}
+      {/* start offercard */}
       <Box
         className={Hero.offersBackground}
         sx={{ padding: { xs: "40px 0px!important", sm: "50px 0px!important" } }}
@@ -406,7 +424,7 @@ const Home = () => {
                 fontWeight: "Regular",
                 maxWidth: "856px",
                 margin: "auto",
-                paddingBottom: { xs: "60px", md: "20px",sm:"100px" },
+                paddingBottom: { xs: "60px", md: "20px", sm: "100px" },
               }}
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -430,7 +448,11 @@ const Home = () => {
                       xs={12}
                       sm={6}
                       md={3}
-                      sx={{ position: "relative", display: "flex",justifyContent:"center" }}
+                      sx={{
+                        position: "relative",
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
                     >
                       <Card
                         sx={{
@@ -507,9 +529,8 @@ const Home = () => {
                             sx={{
                               fontSize: { sm: "18px", xs: "16px" },
                               fontFamily: "Poppins",
-                              color: { xs: "#fff",sm:"#000"},
+                              color: { xs: "#fff", sm: "#000" },
                             }}
-                            
                           >
                             {item.rate}
                           </Typography>
@@ -568,7 +589,7 @@ const Home = () => {
                             position: "absolute",
                             bottom: "-20px",
                             color: "#000",
-                            zIndex:"9999999999999999"
+                            zIndex: "9999999999999999",
                           }}
                           className={Hero.offercardButton}
                         >
@@ -595,6 +616,172 @@ const Home = () => {
               })}
             </Grid>
           </Box>
+        </Container>
+      </Box>
+      {/* end offercard */}
+      {/* start service part */}
+      <Box sx={{ padding: {xs:"50px 0px 80px",md:"250px 0px 80px",sm:"0px 0px 80px"}, backgroundColor: "#000" }}>
+        <Container maxWidth="xl">
+          <Grid container>
+            <Grid xs={12} md={5}  sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "flex-start",
+                  sm: "center",
+                  md: "flex-start",
+                },
+                alignItems: "center",
+                flexDirection:"column"
+              }}>
+              <Box className={Hero.serviceleftside} >
+                <img
+                  src={pizza}
+                  alt=""
+                  style={{
+                    position: "absolute",
+                    bottom: "15px",
+                    zIndex: "99",
+                    backgroundSize: "cover",
+                  }}
+                  className={Hero.pizzaimage}
+                />
+                <img
+                  src={chef}
+                  alt=""
+                  style={{ zIndex: "9999", position: "absolute", top: "-85px" }}
+                  className={Hero.chefImage}
+                />
+                <img
+                  src={particles}
+                  alt=""
+                  style={{
+                    zIndex: "9999",
+                    position: "absolute",
+                    top: "-40px",
+                    right: "5px",
+                  }}
+                  className={Hero.particlesImage}
+                />
+                <img
+                  src={vector9}
+                  alt=""
+                  style={{
+                    zIndex: "9999",
+                    position: "absolute",
+                    top: "-77px",
+                    right: "-300px",
+                  }}
+                  className={Hero.vector9}
+                />
+              </Box>
+            </Grid>
+            <Grid
+              xs={12}
+              md={7}
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "flex-start",
+                  sm: "center",
+                  md: "flex-start",
+                },
+                alignItems: "flex-start",
+                flexDirection:"column"
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: "48px",
+                  fontWeight: "Bold",
+                  fontFamily: "Poppins",
+                  lineHeight: "130%",
+                  maxWidth: "452px",
+                  paddingTop: "45px",
+                  textAlign: "left",
+                  paddingBottom: "30px",
+                }}
+                className={Hero.serviceHeading}
+              >
+                We are <span style={{ color: "#F54748" }}> more</span> than{" "}
+                <span style={{ color: "#FDC55E" }}>multiple</span> service
+              </Typography>
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: {xs:"16px",sm:"18px"},
+                  fontFamily: "Poppins",
+                  lineHeight: "auto",
+                  opacity: "80%",
+                  paddingBottom: "20px",
+                }}
+              >
+                This is a type of resturent which typically serves food and
+                drink, in addition to light refreshments such as baked goods or
+                snacks. The term comes frome the rench word meaning food
+              </Typography>
+              <Box>
+                <Grid container>
+                  {service.map((item) => {
+                    return (
+                      <Grid xs={12} sm={6}>
+                        <>
+                          <ul style={{ margin: "0px", padding: "15px 0px" }}>
+                            <li
+                              style={{
+                                listStyle: "none",
+                                display: "flex",
+                                justifyContent: {
+                                  xs: "flex-start",
+                                  sm: "center",
+                                  md: "flex-start",
+                                },
+                                alignItems: "center",
+                              }}
+                            >
+                              <img
+                                src={item.img}
+                                alt=""
+                                style={{ width: "26px", height: "26px" }}
+                              />
+                              <Typography
+                                sx={{
+                                  color: "#fff",
+                                  marginLeft: "15px",
+                                  fontSize: "18px",
+                                  fontFamily: "Poppins",
+                                  lineHeight: "auto",
+                                  fontWeight: "Medium",
+                                }}
+                              >
+                                {item.desc}
+                              </Typography>
+                            </li>
+                          </ul>
+                        </>
+                      </Grid>
+                    );
+                  })}
+                </Grid>
+              </Box>
+              <Box sx={{ paddingTop: "30px" }}>
+                <Button
+                  sx={{
+                    textTransform: "capitalize",
+                    backgroundColor: "#F65F5F",
+                    color: "#000",
+                    fontSize: "18px",
+                    borderRadius: "100px",
+                    fontFamily: "Poppins",
+                    padding: "10px 25px",
+                    fontWeight: "Regular",
+                  }}
+                >
+                  About Us
+                </Button>
+              </Box>
+            </Grid>
+          </Grid>
         </Container>
       </Box>
     </>
