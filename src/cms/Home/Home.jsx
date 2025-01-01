@@ -39,6 +39,8 @@ import vector9 from "../../Assets/Images/Vector 9.png";
 import order from "../../Assets/Images/image 15.png";
 import twentyfour from "../../Assets/Images/image 17.png";
 import booking from "../../Assets/Images/image 18.png";
+import playstore from '../../Assets/Images/google play.png'
+import applestore from '../../Assets/Images/app store.png'
 
 const Home = () => {
   const OffersCard = [
@@ -620,10 +622,22 @@ const Home = () => {
       </Box>
       {/* end offercard */}
       {/* start service part */}
-      <Box sx={{ padding: {xs:"50px 0px 80px",md:"250px 0px 80px",sm:"0px 0px 80px"}, backgroundColor: "#000" }}>
+      <Box
+        sx={{
+          padding: {
+            xs: "50px 0px 40px",
+            md: "250px 0px 80px",
+            sm: "0px 0px 40px",
+          },
+          backgroundColor: "#000",
+        }}
+      >
         <Container maxWidth="xl">
           <Grid container>
-            <Grid xs={12} md={5}  sx={{
+            <Grid
+              xs={12}
+              md={5}
+              sx={{
                 display: "flex",
                 justifyContent: {
                   xs: "flex-start",
@@ -631,9 +645,10 @@ const Home = () => {
                   md: "flex-start",
                 },
                 alignItems: "center",
-                flexDirection:"column"
-              }}>
-              <Box className={Hero.serviceleftside} >
+                flexDirection: "column",
+              }}
+            >
+              <Box className={Hero.serviceleftside}>
                 <img
                   src={pizza}
                   alt=""
@@ -686,7 +701,7 @@ const Home = () => {
                   md: "flex-start",
                 },
                 alignItems: "flex-start",
-                flexDirection:"column"
+                flexDirection: "column",
               }}
             >
               <Typography
@@ -709,7 +724,7 @@ const Home = () => {
               <Typography
                 sx={{
                   color: "#fff",
-                  fontSize: {xs:"16px",sm:"18px"},
+                  fontSize: { xs: "16px", sm: "18px" },
                   fontFamily: "Poppins",
                   lineHeight: "auto",
                   opacity: "80%",
@@ -779,6 +794,122 @@ const Home = () => {
                 >
                   About Us
                 </Button>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+      {/* end service part  */}
+      {/* start Mobile App section */}
+      <Box
+        sx={{
+          padding: {
+            xs: "0px 0px 80px",
+            md: "250px 0px 80px",
+            sm: "0px 0px 80px",
+          },
+          backgroundColor: "#000",
+        }}
+        className={Hero.AppSection}
+      >
+        <Container maxWidth="xl">
+          <Grid container>
+            <Grid
+              xs={12}
+              md={7}
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "flex-start",
+                  sm: "center",
+                  md: "flex-start",
+                },
+                alignItems: "flex-start",
+                flexDirection: "column",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: "48px",
+                  fontWeight: "Bold",
+                  fontFamily: "Poppins",
+                  lineHeight: "130%",
+                  maxWidth: "90%",
+                  paddingTop: "45px",
+                  textAlign: "left",
+                  paddingBottom: "30px",
+                }}
+                className={Hero.serviceHeading}
+              >
+                It’s Now <span style={{ color: "#F54748" }}>More Easy</span> to 
+                 <span style={{ color: "#FDC55E" }}> Order</span> by Our Mobile{" "}
+                <span style={{ color: "#F54748" }}> App</span>
+              </Typography>
+              <Typography
+                sx={{
+                  color: "#fff",
+                  fontSize: { xs: "16px", sm: "18px" },
+                  fontFamily: "Poppins",
+                  lineHeight: "auto",
+                  opacity: "80%",
+                  paddingBottom: "20px",
+                }}
+              >
+                All you need to do is downlode one of the best delivery apps,
+                make a and most companies are opting for mobile app devlopment
+                for food delivery
+              </Typography>
+
+              <Box sx={{ paddingTop: "30px",paddingBottom:{xs:"100px",md:"0px",sm:"120px"} }}>
+                
+                 <img src={playstore} alt="" style={{marginRight:"20px"}} />
+                 <img src={applestore} alt="" />
+              </Box>
+            </Grid>
+            <Grid
+              xs={12}
+              md={5}
+              sx={{
+                display: "flex",
+                justifyContent: {
+                  xs: "flex-start",
+                  sm: "center",
+                  md: "flex-end",
+                },
+                alignItems: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box className={Hero.serviceleftside}>
+                <img
+                  src={pizza}
+                  alt=""
+                  style={{
+                    position: "absolute",
+                    bottom: "15px",
+                    zIndex: "99",
+                    backgroundSize: "cover",
+                  }}
+                  className={Hero.pizzaimage}
+                />
+                <img
+                  src={chef}
+                  alt=""
+                  style={{ zIndex: "9999", position: "absolute", top: "-85px" }}
+                  className={Hero.chefImage}
+                />
+                <img
+                  src={particles}
+                  alt=""
+                  style={{
+                    zIndex: "9999",
+                    position: "absolute",
+                    top: "-40px",
+                    right: "5px",
+                  }}
+                  className={Hero.particlesImage}
+                />
               </Box>
             </Grid>
           </Grid>

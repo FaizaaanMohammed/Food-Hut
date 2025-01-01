@@ -346,6 +346,9 @@
        .serviceHeading{
         font-size: 40px!important;
        }
+       .subscribeButton{
+          margin-top: 15px!important;
+       }
       }
       @media  (max-width: 426px){
         .offercardButton{
@@ -449,6 +452,6 @@
  top: 0;
  /* clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%); */
 }
-/* .serviceleftside{
-  background-color: #FDC55E;
-} */
+.AppSection{
+  background: linear-gradient(to bottom, #000 0%, rgba(253, 197, 94, 0.5) 350%);
+}
