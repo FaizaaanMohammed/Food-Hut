@@ -54,28 +54,15 @@ export default function Navbar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        backgroundColor: "transparent",
-        position: "fixed",
-        top: "0",
-        left: "0",
-        height: "auto",
-        padding: "0px!important",
-        justifyContent:"space-between"
-      }}
-    >
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         component="nav"
         sx={{
-          position: "realtive",
+          position: "static", // Changed to make the navbar scrollable
           backgroundColor: "transparent",
           color: "#fff",
           boxShadow: "none",
-          top: "0",
-          left: "0",
           padding: "20px 0px",
         }}
       >
@@ -118,15 +105,20 @@ export default function Navbar(props) {
                     textTransform: "capitalize",
                     fontFamily: "Poppins",
                     fontWeight: "Regular",
-                    fontSize: {lg:"16px",md:"14px",sm:"11px"},
-                    padding: {lg:"20px",md:"10px",sm:"5px"},
+                    fontSize: { lg: "16px", md: "14px", sm: "11px" },
+                    padding: { lg: "20px", md: "10px", sm: "5px" },
                   }}
                 >
                   {item}
                 </Button>
               ))}
             </Box>
-            <Typography sx={{ paddingLeft: {md:"55px",xs:"0px",lg:"90px",sm:"20px"},marginLeft:"auto" }}>
+            <Typography
+              sx={{
+                paddingLeft: { md: "55px", xs: "0px", lg: "90px", sm: "20px" },
+                marginLeft: "auto",
+              }}
+            >
               <Button
                 variant="contained"
                 sx={{
@@ -134,11 +126,11 @@ export default function Navbar(props) {
                   borderRadius: "100px",
                   fontFamily: "Poppins",
                   textTransform: "capitalize",
-                  color:"#000",
-                  fontSize:{sm:"14px",md:"14px"},
-                  fontWeight:"Regular",
-                  boxShadow:"none",
-                  padding:{xs:"5px 15px!important",md:"8px 15px!important"}
+                  color: "#000",
+                  fontSize: { sm: "14px", md: "14px" },
+                  fontWeight: "Regular",
+                  boxShadow: "none",
+                  padding: { xs: "5px 15px!important", md: "8px 15px!important" },
                 }}
               >
                 Download App
@@ -167,7 +159,7 @@ export default function Navbar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main" sx={{ p: 0 }}>
         <Toolbar />
       </Box>
     </Box>

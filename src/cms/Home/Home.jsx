@@ -41,6 +41,7 @@ import twentyfour from "../../Assets/Images/image 17.png";
 import booking from "../../Assets/Images/image 18.png";
 import playstore from '../../Assets/Images/google play.png'
 import applestore from '../../Assets/Images/app store.png'
+import youngChef from '../../Assets/Images/happy-young-handsome-cook-chef-uniform-holding-mobile-phone-raising-fist-isolated-white-wall 3.png'
 
 const Home = () => {
   const OffersCard = [
@@ -804,7 +805,7 @@ const Home = () => {
       <Box
         sx={{
           padding: {
-            xs: "0px 0px 80px",
+            xs: "0px 0px 30px",
             md: "250px 0px 80px",
             sm: "0px 0px 80px",
           },
@@ -813,7 +814,7 @@ const Home = () => {
         className={Hero.AppSection}
       >
         <Container maxWidth="xl">
-          <Grid container>
+          <Grid container sx={{flexDirection:{xs:"column-reverse",sm:"row"}}}>
             <Grid
               xs={12}
               md={7}
@@ -826,6 +827,8 @@ const Home = () => {
                 },
                 alignItems: "flex-start",
                 flexDirection: "column",
+                paddingLeft:{md:"30px"},
+                
               }}
             >
               <Typography
@@ -861,7 +864,7 @@ const Home = () => {
                 for food delivery
               </Typography>
 
-              <Box sx={{ paddingTop: "30px",paddingBottom:{xs:"100px",md:"0px",sm:"120px"} }}>
+              <Box sx={{ paddingTop: "30px",paddingBottom:{xs:"0px",md:"0px",sm:"120px"} }}>
                 
                  <img src={playstore} alt="" style={{marginRight:"20px"}} />
                  <img src={applestore} alt="" />
@@ -879,9 +882,10 @@ const Home = () => {
                 },
                 alignItems: "center",
                 flexDirection: "column",
+                paddingTop:{xs:"80px",sm:"0px"}
               }}
             >
-              <Box className={Hero.serviceleftside}>
+              <Box className={Hero.serviceleftside} >
                 <img
                   src={pizza}
                   alt=""
@@ -896,7 +900,7 @@ const Home = () => {
                 <img
                   src={chef}
                   alt=""
-                  style={{ zIndex: "9999", position: "absolute", top: "-85px" }}
+                  style={{ zIndex: "99", position: "absolute", top: "-85px" }}
                   className={Hero.chefImage}
                 />
                 <img
@@ -915,6 +919,7 @@ const Home = () => {
           </Grid>
         </Container>
       </Box>
+      {/* end mobile application */}
     </>
   );
 };
