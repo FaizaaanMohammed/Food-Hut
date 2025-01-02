@@ -41,7 +41,7 @@ import twentyfour from "../../Assets/Images/image 17.png";
 import booking from "../../Assets/Images/image 18.png";
 import playstore from '../../Assets/Images/google play.png'
 import applestore from '../../Assets/Images/app store.png'
-import youngChef from '../../Assets/Images/happy-young-handsome-cook-chef-uniform-holding-mobile-phone-raising-fist-isolated-white-wall 3.png'
+
 
 const Home = () => {
   const OffersCard = [
